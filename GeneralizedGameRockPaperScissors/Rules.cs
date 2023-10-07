@@ -119,7 +119,6 @@
             {
                 maxMoveWidth = header.Length;
             }
-            Console.WriteLine(maxMoveWidth);
 
             PrintHorizontalLine(maxMoveWidth, movesWithoutLastTwo);
 
