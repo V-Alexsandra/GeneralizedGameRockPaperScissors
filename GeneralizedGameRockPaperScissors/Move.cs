@@ -5,10 +5,10 @@
         public static int GetMovesCount(string[] args)
         {
             int movesCount = args.Length;
-            if (movesCount % 2 == 0)
+            if (movesCount % 2 == 0 || movesCount <= 1)
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Invalid number of arguments(moves). The number of moves must be odd.");
+                Console.WriteLine("Invalid number of arguments(moves). The number of moves must be odd and more than one.");
                 Console.WriteLine("Please restart the program with an odd number of moves.");
                 Console.ResetColor();
                 Environment.Exit(0);
